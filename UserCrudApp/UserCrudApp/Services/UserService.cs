@@ -30,7 +30,7 @@ namespace UserCrudApp.Services
                 users.Add(user);
             }
         }
-        public List<User> getAll()
+        public List<User> GetAll()
         {
             return users;
         }
@@ -44,7 +44,7 @@ namespace UserCrudApp.Services
             users.Add(user);
             return user;
         }
-        public void update(int id, User user)
+        public void Update(int id, User user)
         {
             User found = users.Where(n => n.Id == id).FirstOrDefault();
             found.Name = user.Name;
